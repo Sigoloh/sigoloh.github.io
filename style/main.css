@@ -1,0 +1,116 @@
+:root {
+  --dark: #1e1e1e;
+  --clear: #fff;
+  --yellow: #ffec42;
+}
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+}
+
+.sideBar {
+  background: var(--dark);
+  width: 15vw;
+  padding: 10px 10px 5px 10px;
+  max-width: 15vw;
+  height: calc(100vh - 10px);
+  max-height: calc(100vh - 15px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sideBar h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--clear);
+}
+
+.sideBar .sideBarHeader {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sideBar .sideBarHeader .me {
+  width: 60%;
+  border-radius: 1000px;
+  border: 5px solid var(--clear);
+}
+
+.sideBar h1 {
+  font-size: 1.5rem;
+  line-height: 0;
+}
+
+.sideBar h2 {
+  line-height: 0;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.sideBarMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 0px 5px 10px;
+  width: 100%;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.sideBarMenu .current {
+  border-bottom: 3px solid var(--yellow);
+}
+
+.sideBarMenu a {
+  color: var(--clear);
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  width: 50%;
+}
+
+.sideBarMenu a:hover {
+  color: #c0c0c0;
+}
+
+.sideBar .sideBarFastAccess img {
+  width: 25px;
+  color: var(--clear);
+  height: 25px;
+}
+
+main {
+  padding: 10px 20px 10px 20px;
+  max-width: 85vw;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+main section h3 {
+  font-size: 2em;
+  border-bottom: solid 5px var(--yellow);
+  font-family: "Montserrat", sans-serif;
+}
+
+main section {
+  text-align: justify;
+  max-width: 80%;
+}
+
+main section p a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: bold;
+}
