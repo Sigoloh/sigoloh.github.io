@@ -2,7 +2,9 @@
   --dark: #1e1e1e;
   --clear: #fff;
   --yellow: #ffec42;
+  --dark-yellow: #ffbd42;
 }
+
 body {
   border: 0;
   margin: 0;
@@ -107,10 +109,62 @@ main section h3 {
 main section {
   text-align: justify;
   max-width: 80%;
+  width: 80%;
 }
 
 main section p a {
   text-decoration: none;
   color: var(--dark);
   font-weight: bold;
+}
+
+.projectCardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.projectCard {
+  border: 1px solid var(--dark);
+  max-width: 30%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-items: center;
+}
+
+.projectCard h4 {
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--dark);
+  padding: 15px 0px 15px 15px;
+  width: calc(100% - 15px);
+  margin-bottom: 5px;
+  color: var(--clear);
+  font-family: "Montserrat", sans-serif;
+}
+
+.projectCard p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0px 15px 0px 15px;
+}
+
+.projectCard a {
+  margin-top: 5px;
+  background-color: var(--yellow);
+  padding: 15px 5px 15px 5px;
+  width: calc(100% - 10px);
+  color: var(--dark);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projectCard a:hover {
+  background-color: var(--dark-yellow);
 }
