@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conway's Game of Life</title>
+  </head>
+  <body>
+    <a href="https://augusto.sigolo.me" class="goBack">Back to my portfolio</a>
+    <a
+      href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+      class="wikipedia"
+      target="_blank"
+      >Wanna make you own? Click me</a
+    >
+    <div class="container" id="container">
+      <div class="patternsContainer popUpClosed" id="patternsCard">
+        <div class="patternsCard">
+          <span><span id="closePopUp">X</span></span>
+          <div class="patternsImages">
+            <img src="./assets/Still lifes.png" alt="" />
+            <img src="./assets/Oscilators.png" alt="" />
+            <img src="./assets/spaceships.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="game" id="game-map"></div>
+      <div class="actionsContaienr">
+        <button id="stopcycle">Stop</button>
+        <button id="nextCycle">Play</button>
+        <button id="nextGen">See next gen</button>
+        <button id="reset">Reset map</button>
+        <button id="showPattersn">See patterns</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
